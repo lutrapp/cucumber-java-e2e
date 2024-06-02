@@ -1,0 +1,39 @@
+1. create a simple maven project
+2. add cucumber dependency, junit e junit cucumber
+3. add plugin cucumber java
+4. create a package Features under src/test/resorces and a file login.feature here
+5. add contents on feature file (scenario, steps, scenario outline, example, tags, comments)
+6. try to run feature file test
+7. add steps definition/ glue code under src/test/java package
+8. create a runner class
+9.
+
+
+
+
+
+>>> login.feature... >>>examples
+  #Author
+  #Date
+  # Description
+
+@SmokeScenario
+Feature: feature to test login funcionallity
+
+  @SmokeTest
+  Scenario: Check login is sucessful valid credentials
+    Given user is on login page
+    When user enters username and password
+    And clicks on login button
+    Then user is navigated to the home page
+
+  Scenario Outline: Check login is sucessful valid credentials
+    Given user is on login page
+    When user enters <username> and <password>
+    And clicks on login button
+    Then user is navigated to the home page
+
+    Examples:
+      | username | password |
+      | user1 | pass1 |
+      | user2 | pass2 |
