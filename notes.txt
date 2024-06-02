@@ -6,7 +6,9 @@
 6. try to run feature file test
 7. add steps definition/ glue code under src/test/java package
 8. create a runner class
-9.
+9. add seleium java dependency
+10. download chromedriver https://googlechromelabs.github.io/chrome-for-testing/ and save it on new package drivers
+
 
 
 
