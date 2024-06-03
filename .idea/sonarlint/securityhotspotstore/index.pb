@@ -19,3 +19,7 @@ d
 -src/test/java/stepDefinitions/TestRunner.java,7\a\7a9a544cdcec4afecb1b8aab6b30c6da9fefae97
 ]
 -src/test/java/stepDefinitions/LoginSteps.java,4\5\45d6ec5bd8aac5a1a67667fead4474e4617a5ada
+R
+"src/test/java/Pages/loginPage.java,6\a\6a0295370a2e861d92f341a4c331cf678c8bebba
+`
+0src/test/java/stepDefinitions/LoginStepsPOM.java,c\1\c1661d88bdff693f40bfafba775fb67e8f4dcdc0
