@@ -35,10 +35,13 @@ public class LoginSteps {
         driver.navigate().to("https://www.saucedemo.com/");
     }
 
-    @When("user enters username and password")
-    public void user_enters_username_and_password() throws InterruptedException {
-        driver.findElement(By.id("user-name")).sendKeys("standard_user");
-        driver.findElement(By.id("password")).sendKeys("secret_sauce");
+//    @When("user enters username and password")
+    @When("^user enters (.*) and (.*)$") //using parameter with scenario outline on feature
+    public void user_enters_username_and_password(String username, String password) throws InterruptedException {
+//        driver.findElement(By.id("user-name")).sendKeys("standard_user");
+//        driver.findElement(By.id("password")).sendKeys("secret_sauce");
+        driver.findElement(By.id("user-name")).sendKeys(username);
+        driver.findElement(By.id("password")).sendKeys(password);
         Thread.sleep(2000);
     }
 
